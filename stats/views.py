@@ -43,7 +43,7 @@ class StatCreate(APIView):
                 slug = slugify(str(date.today().strftime("%d-%m-%Y-%H-%M-%S")))
                 )
             stat.save()
-            if (ObjEv.objects.get(title=validated_data.get('domen', None)).alarm ==False) & ((int(validated_data.get('Uin', None))!=1) | (int(validated_data.get('Uout', None))!=1)| (int(validated_data.get('temp', None))>162)| (int(validated_data.get('voltage', None))>2.5)):
+            if (ObjEv.objects.get(title=validated_data.get('domen', None)).alarm ==False) & ((int(validated_data.get('Uin', None))!=1) | (int(validated_data.get('Uout', None))!=1)| (float(validated_data.get('temp', None))>162)| (float(validated_data.get('voltage', None))>2.5)):
                 obj= ObjEv.objects.get(title=validated_data.get('domen', None))
                 obj.alarm = True
                 obj.save()
@@ -56,7 +56,7 @@ class StatCreate(APIView):
                               ",voltage="+validated_data.get('voltage', None),
                               EMAIL_HOST_USER, [user.email], fail_silently=False)
             elif (ObjEv.objects.get(title=validated_data.get('domen', None)).alarm ==True) & ((int(validated_data.get('Uin', None))==1) | (int(validated_data.get('Uout', None))==1)
-                | (int(validated_data.get('temp', None))<162)| (int(validated_data.get('voltage', None))<2.5)):
+                | (float(validated_data.get('temp', None))<162)| (float(validated_data.get('voltage', None))<2.5)):
                 print(111)
                 obj= ObjEv.objects.get(title=validated_data.get('domen', None))
                 obj.alarm = True

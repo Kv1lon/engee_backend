@@ -43,13 +43,13 @@ class ProfileUpdate(UpdateAPIView):
 class UserActivationView(View):
 
     def get(self, request, uid, token, format=None):
-        response = redirect('http://localhost:8080/users/activation/' + uid + '/' + token)
+        response = redirect('https://engee/users/activation/' + uid + '/' + token)
         return response
 
 
 class ResetPasswordView(View):
     def get(self, request, uid, token, format=None):
-        response = redirect('http://localhost:8080/users/reset_password/' + uid + '/' + token)
+        response = redirect('https://engee/users/reset_password/' + uid + '/' + token)
         return response
 
 
