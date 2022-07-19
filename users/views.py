@@ -43,13 +43,13 @@ class ProfileUpdate(UpdateAPIView):
 class UserActivationView(View):
 
     def get(self, request, uid, token, format=None):
-        response = redirect('https://engee/users/activation/' + uid + '/' + token)
+        response = redirect('https://engee.herokuapp.com/users/activation/' + uid + '/' + token)
         return response
 
 
 class ResetPasswordView(View):
     def get(self, request, uid, token, format=None):
-        response = redirect('https://engee/users/reset_password/' + uid + '/' + token)
+        response = redirect('https://engee.herokuapp.com/users/reset_password/' + uid + '/' + token)
         return response
 
 
