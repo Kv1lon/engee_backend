@@ -172,10 +172,11 @@ CORS_ORIGIN_WHITELIST = [
     "http://192.168.1.177:8000",
     "http://localhost:8080",
     "http://localhost:8081",
+    "http://159.89.105.77:8080",
 
 
 ]
-ALLOWED_HOSTS = ["localhost","127.0.0.1","192.168.1.10","192.168.0.106","0.0.0.0"]
+ALLOWED_HOSTS = ["localhost","127.0.0.1","192.168.1.10","192.168.0.106","0.0.0.0","159.89.105.77"]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp-relay.sendinblue.com'
 EMAIL_PORT = '587'
