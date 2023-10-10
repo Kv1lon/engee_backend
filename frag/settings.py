@@ -66,30 +66,30 @@ WSGI_APPLICATION = 'frag.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 # For dev
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'obj_db',
-       'USER':'skripnik',
-       'PASSWORD':'Volk_2005',
-       'HOST':'127.0.0.1',
-       'PORT':5432,
-       'TEST': {
-           'NAME': 'test_obj',
-       },
-   }
-}
-# For docker
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER':'postgres',
-#         'PASSWORD':'123456',
-#         'HOST':'hiker_db',
-#         'PORT':5432,
-#     }
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'obj_db',
+#        'USER':'skripnik',
+#        'PASSWORD':'Volk_2005',
+#        'HOST':'127.0.0.1',
+#        'PORT':5432,
+#        'TEST': {
+#            'NAME': 'test_obj',
+#        },
+#    }
 # }
+# For docker
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER':'postgres',
+        'PASSWORD':'123456',
+        'HOST':'engee_db',
+        'PORT':5432,
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
