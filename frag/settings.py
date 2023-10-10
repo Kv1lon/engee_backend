@@ -3,7 +3,6 @@ import shutil
 from datetime import timedelta
 import sys
 
-import django_heroku
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '52)xj$^6n7pecq6vrp(tx*wp!l6(^opya)1+9)ltz&jc8s@r_4'
@@ -176,7 +175,7 @@ CORS_ORIGIN_WHITELIST = [
 
 
 ]
-ALLOWED_HOSTS = ["localhost","127.0.0.1","192.168.1.10","192.168.0.106"]
+ALLOWED_HOSTS = ["localhost","127.0.0.1","192.168.1.10","192.168.0.106","0.0.0.0"]
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp-relay.sendinblue.com'
 EMAIL_PORT = '587'
@@ -186,7 +185,6 @@ EMAIL_HOST_PASSWORD = '1KwdHC3pVFZGsh48'
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880
 if 'test' in sys.argv:
    CACHE_MIDDLEWARE_SECONDS = 0
-django_heroku.settings(locals())
 AWS_ACCESS_KEY_ID = "AKIAQ3KTD3JP2CHKBLP6"
 AWS_SECRET_ACCESS_KEY = "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"
 AWS_STORAGE_BUCKET_NAME = "hiker-bucket-assets"
