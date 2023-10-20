@@ -7,7 +7,6 @@ import sys
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '52)xj$^6n7pecq6vrp(tx*wp!l6(^opya)1+9)ltz&jc8s@r_4'
 DEBUG = True
-ALLOWED_HOSTS = []
 TIME_ZONE = 'UTC'
 
 INSTALLED_APPS = [
@@ -179,9 +178,10 @@ CORS_ORIGIN_WHITELIST = [
 ALLOWED_HOSTS = ["localhost","127.0.0.1","192.168.1.10","192.168.0.106","0.0.0.0","159.89.105.77",'engee-back.elaiviaien.com','www.engee-back.elaiviaien.com']
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'mail.privateemail.com'
-EMAIL_PORT = '465'
+EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'me@elaiviaien.com'
 EMAIL_HOST_PASSWORD = 'Oliver_101012'
+EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "me@elaiviaien.com"
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880
 if 'test' in sys.argv:
