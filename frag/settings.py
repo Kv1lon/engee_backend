@@ -178,11 +178,11 @@ CORS_ORIGIN_WHITELIST = [
 ]
 ALLOWED_HOSTS = ["localhost","127.0.0.1","192.168.1.10","192.168.0.106","0.0.0.0","159.89.105.77",'engee-back.elaiviaien.com','www.engee-back.elaiviaien.com']
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp-relay.sendinblue.com'
-EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'mich.sk.freelance@gmail.com'
-DEFAULT_FROM_EMAIL = "noreply@engee.com"
-EMAIL_HOST_PASSWORD = '1KwdHC3pVFZGsh48'
+EMAIL_HOST = 'mail.privateemail.com'
+EMAIL_PORT = '465'
+EMAIL_HOST_USER = 'me@elaiviaien.com'
+EMAIL_HOST_PASSWORD = 'Oliver_101012'
+DEFAULT_FROM_EMAIL = "me@elaiviaien.com"
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880
 if 'test' in sys.argv:
    CACHE_MIDDLEWARE_SECONDS = 0
