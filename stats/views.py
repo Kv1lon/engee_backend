@@ -17,7 +17,7 @@ from slugify import slugify
 from datetime import date
 from django.core.mail import send_mail
 
-from frag.settings import EMAIL_HOST_USER
+from engee.settings import EMAIL_HOST_USER
 
 
 class StatCreate(APIView):

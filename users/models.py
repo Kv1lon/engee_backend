@@ -12,7 +12,7 @@ from io import BytesIO
 from PIL import Image
 from django.core.files import File
 from obj_ev.models import ObjEv
-from frag import settings
+from engee import settings
 
 
 class Userc(AbstractUser):

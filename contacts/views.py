@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from contacts.serializers import SendMail
-from frag.settings import EMAIL_HOST_USER
+from engee.settings import EMAIL_HOST_USER
 
 
 class SendEmail(APIView):
