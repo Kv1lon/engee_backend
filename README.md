@@ -42,7 +42,9 @@ python manage.py migrate
 5. Run the development server:
 ```bash
 python manage.py runserver
-
+```
+or just run the following command to start the server with docker:
+```
 docker compose up -d
 ```
 
@@ -58,12 +60,12 @@ Add additional notes about how to deploy this on a live system. You may specify 
 
 ## Built With
 
-- Django - The web framework used
-- Any other major libraries or frameworks used in the project
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](link-to-license) file for details.
+- Django Rest Framework
+- Django
+- Docker
+- PostgreSQL
+- Nginx
+- Gunicorn
 
 ## Acknowledgments
 
