@@ -1,21 +1,75 @@
-# engee
+# Engee
 
-Relevance: our current power supply systems are even wider. They are victorious here, for which mankind has begun to vikorist, and adjust the electrical power supply to remove information from the system. Please select the screen on which the data is displayed, and in order to recognize the settings you need to go to the place where the settings have been set.
+A site for monitoring parameters of electrical systems of high-tech equipmen
 
-A site that displays information about the electrical system is even more relevant, because people can admire displays of devices at any time, at any point in the world.
+## Getting Started
 
-Meta robots: create a website for monitoring the display of electrical system objects, where customers can add their objects using an additional IP address, receive email alerts about critical indicators of extinction. Add visualization of changes to be displayed on the website in the form of dynamic graphs and tables.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Main tasks of the exhaust robot:
+### Prerequisites
 
-Write to the Back-end monitoring site to show the electrical system settings.
+What things you need to install the software:
 
-Write to the Front-end monitoring site to show the electrical system devices.
+- Python 3.x
+- Django (specify version if necessary)
+- Any other dependencies required
 
-<a href="https://imgur.com/hSVM2Wl"><img src="https://i.imgur.com/hSVM2Wl.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/BHAwMLB"><img src="https://i.imgur.com/BHAwMLB.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/XQdRA1j"><img src="https://i.imgur.com/XQdRA1j.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/wIH4lcK"><img src="https://i.imgur.com/wIH4lcK.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/c4Jpivm"><img src="https://i.imgur.com/c4Jpivm.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/hSVM2Wl"><img src="https://i.imgur.com/hSVM2Wl.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/mUpda9j"><img src="https://i.imgur.com/mUpda9j.png" title="source: imgur.com" /></a>
+```
+pip install django
+# Add any other necessary installation commands
+```
+
+### Installing
+
+A step-by-step series of examples that tell you how to get a development environment running:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/elaiviaien/engee.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd engee_backend
+```
+
+3. Install the requirements:
+```bash
+pip install -r requirements.txt
+```
+
+4. Create and apply migrations:
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+5. Run the development server:
+```bash
+python manage.py runserver
+```
+
+Navigate to http://localhost:8000 in your web browser to view the application.
+
+## Running the Tests
+
+Explain how to run the automated tests for this system, if any.
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system. You may specify instructions for platforms like Heroku, AWS, etc.
+
+## Built With
+
+- Django - The web framework used
+- Any other major libraries or frameworks used in the project
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](link-to-license) file for details.
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc.
