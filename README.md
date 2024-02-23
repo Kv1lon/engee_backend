@@ -14,11 +14,6 @@ What things you need to install the software:
 - Django (specify version if necessary)
 - Any other dependencies required
 
-```
-pip install django
-# Add any other necessary installation commands
-```
-
 ### Installing
 
 A step-by-step series of examples that tell you how to get a development environment running:
@@ -47,6 +42,8 @@ python manage.py migrate
 5. Run the development server:
 ```bash
 python manage.py runserver
+
+docker compose up -d
 ```
 
 Navigate to http://localhost:8000 in your web browser to view the application.
