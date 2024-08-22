@@ -50,14 +50,6 @@ docker compose up -d
 
 Navigate to http://localhost:8000 in your web browser to view the application.
 
-## Running the Tests
-
-Explain how to run the automated tests for this system, if any.
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system. You may specify instructions for platforms like Heroku, AWS, etc.
-
 ## Built With
 
 - Django Rest Framework
@@ -66,9 +58,3 @@ Add additional notes about how to deploy this on a live system. You may specify 
 - PostgreSQL
 - Nginx
 - Gunicorn
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc.
